@@ -1,1 +1,24 @@
-<p>read-recipe works!</p>
+<div class="container">
+    <h2>Recept megtekintése</h2>
+    <form [formGroup]="recipeForm">
+      <div class="form-group">
+        <label for="name">Név:</label>
+        <input type="text" id="name" class="form-control" formControlName="name">
+      </div>
+      
+      <div class="form-group">
+        <label for="prepTimeMinutes">Előkészítési idő (perc):</label>
+        <input type="number" id="prepTimeMinutes" class="form-control" formControlName="prepTimeMinutes">
+      </div>
+      
+      <div class="form-group">
+        <label for="cookTimeMinutes">Főzési idő (perc):</label>
+        <input type="number" id="cookTimeMinutes" class="form-control" formControlName="cookTimeMinutes">
+      </div>
+      
+      <div class="form-group">
+        <label for="cuisine">Konyha típusa:</label>
+        <input type="text" id="cuisine" class="form-control" formControlName="cuisine">
+      </div>
+    </form>
+  </div>
